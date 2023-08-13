@@ -45,12 +45,12 @@ export default function Burger() {
                             <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
                                 <a href="/meals">Meals</a>
                             </li>
-                            {/* <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/blog">Blog</a>
-                            </li> */}
-                            <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
-                                <a href="/sustainability">Sustainability</a>
+                            <li className="border-b border-gray-400 my-8 uppercase">
+                                <a href="/cart">Cart</a>
                             </li>
+                            {/* <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
+                                <a href="/sustainability">Sustainability</a>
+                            </li> */}
                         </ul>
                         {/* <SocialIcon url="https://www.instagram.com/needles_craft_kultur_leipzig/" target="blank" /> */}
                     </div>
@@ -66,12 +66,12 @@ export default function Burger() {
                     <li>
                         <a href="/meals" className="hover:text-gray-400">Meals</a>
                     </li>
-                    {/* <li>
-                        <a href="/blog">Blog</a>
-                    </li> */}
                     <li>
-                        <a href="/sustainability" className="hover:text-gray-400">Sustainability</a>
+                        <a href="/cart" className="hover:text-gray-400 mr-2">Cart</a>
                     </li>
+                    {/* <li>
+                        <a href="/sustainability" className="hover:text-gray-400 mr-2">Sustainability</a>
+                    </li> */}
                 </ul>
             </nav>
             <style>{`
@@ -79,18 +79,18 @@ export default function Burger() {
                 display: none;
                 }
                 .showMenuNav {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100vh;
-                top: 0;
-                left: 0;
-                background: purple;
-                z-index: 10;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: absolute;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    background: green;
+                    color: white
                 }
             `}</style>
         </div>

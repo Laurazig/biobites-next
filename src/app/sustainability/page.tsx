@@ -5,8 +5,7 @@ import Footer from '../components/Footer'
 
 export default function howitworks() {
     return (
-
-        <div>
+        <div className='flex flex-col min-h-screen'>
             <Nav />
             <HeroSust />
             <h1>Sustainability</h1>
@@ -32,7 +31,9 @@ export default function howitworks() {
                 <h2>SMARTER PACKAGING</h2>
                 <p>We are conscious that there must be a balance between sending a fresh, high-quality, safe product and ensuring that we do this with a minimum of packaging. Our packaging team is continuously testing new materials and products to ensure we are meeting our sustainability goals at the same time.</p>
             </div>
-            <Footer />
+            <div className="mt-auto">
+                <Footer />
+            </div>
         </div>
     )
 }

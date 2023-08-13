@@ -5,11 +5,12 @@ import Burger from "./Burger"
 
 export default function Nav() {
   return (
-    <div className="flex ">
-      <Image src={BioBitesLogo} alt="biobites logo"></Image>
-      <h1 className="text-green-600">Biobites</h1>
+    <div className="flex justify-between items-center p-1">
+      <a href="/">
+        <Image src={BioBitesLogo} alt="biobites logo"></Image>
+      </a>
+      <div className="text-green-600 text-2xl font-extrabold">Biobites</div>
       <Burger />
-
     </div>
   )
 }

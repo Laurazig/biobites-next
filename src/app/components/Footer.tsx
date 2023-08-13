@@ -5,27 +5,26 @@ import Image from "next/image"
 
 export default function Nav() {
     return (
-        <div className="flex border-green-600 border-2 pt-3 mt-5">
+        <div className=" flex justify-between border-green-600 bg-green-700 text-white border-2 p-3 text-xs h-24">
             <div className="block">
-            <h4>Get in touch </h4>
-            <p>info@biobites.com
-                +49 464339920
-                Address
-                Prinzenstraße 89, 10969 Berlin, Deutschland
-            </p>
-
+                <h4 className="font-bold font-color">Get in touch </h4>
+                <p>info@biobites.com </p>
+                <p>Karl-Heine-Str.,</p>
+                <p>04229 Leipzig, </p>
+                <p>Germany</p>
             </div>
             <div className="flex">
-                <p>icons</p></div>
+                <p>icons</p>
+            </div>
             {/* insta
             facebook
             pin
             twitter X */}
             <div className="block">
-            <p>© BioBites 2022</p>
-            <p>Conditions</p>
-            <p>Privacy</p>
-            <p>Imprint</p>
+                <p>© BioBites 2023</p>
+                <p>Conditions</p>
+                <p>Privacy</p>
+                <p>Imprint</p>
             </div>
         </div>
     )
