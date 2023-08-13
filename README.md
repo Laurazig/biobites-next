@@ -4,3 +4,6 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 
 A vegan organic version of Hello Fresh cooking kit - An e-Commerce web-site
 
+## tools
+- TailwindCSS
+- PostgreSQL

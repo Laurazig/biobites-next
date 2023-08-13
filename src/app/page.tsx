@@ -7,9 +7,42 @@ import logoVegan from '../../public/assets/logos/petaLogo.jpg'
 import logoBio from '../../public/assets/logos/bioLogo.jpg'
 import logoProtein from '../../public/assets/logos/highProteinLogo.jpg'
 
+// export const MyContext = React.createContext();
 
 export default function Home() {
+  // const [meals, setMeals] = useState([]);
+  // useEffect( () => {
+  //================================
+  // Function to fetch meals data
+  //===============================
+  //   const fetchMealsData = async () => {
+  //     const response = await fetch(process.env.REACT_APP_SERVER_URL + "/meals");
+  //     const result = await response.json();
+  //     try{
+  //       if(response.ok) {
+  //         setMeals(result)
+  //       } else {
+  //         throw new Error(result.message)
+  //       }
+  //     }catch(err){
+  //       alert(err.message)
+  //     }
+  //   }
+  //  fetchMealsData()
+  // }, [] );
   return (
+    //    <MyContext.Provider value={{ meals, setMeals }}>
+    // <div className='App'>
+    //     <Router>
+    //       <Routes>
+    //         <Route path="/meals" element={<MealsPage />} />
+    //         </Routes>
+    //       < Footer />
+    //     </Router >
+    //   </div >
+    // </MyContext.Provider >
+
+
     <div className='flex flex-col min-h-screen'>
       <Nav />
       <HeroHome />

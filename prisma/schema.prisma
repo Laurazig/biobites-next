@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// If schema is modified -> modify DB structure: npx prisma migrate 
+// if DB has data: npx prisma db pull
+// column - data type - constraints (optional)
+//more concise than raw SQL
+//interact with DB on server- generate client library: npx prisma generate 
+//     -> import client into JS file
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+}
