@@ -1,13 +1,10 @@
 import HeroHow from '../components/banners/HeroHow'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 
 export default function howitworks() {
     return (
-        <div className='flex flex-col min-h-screen'>
-            <Nav />
+        <div className=''>
             <HeroHow />
-            <main className=''>
+            <div className='md:m-10'>
                 <h1>How It Works </h1>
                 <div className="md:flex ">
                     <div className='block text-center m-5'>
@@ -47,9 +44,6 @@ export default function howitworks() {
                         </div>
                     </div>
                 </div>
-            </main>
-            <div className="mt-auto">
-                <Footer />
             </div>
         </div>
     )

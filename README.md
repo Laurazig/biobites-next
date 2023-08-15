@@ -5,7 +5,9 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 
 
 ## change 
+
+MongoDB -> PostgreSQL
+React & Express -> React with Next.js
 Javascript -> Typescript
 SASS -> TailwindCSS
-React -> React with Next.js
-MongoDB -> PostgreSQL
+client side rendering -> SSR
