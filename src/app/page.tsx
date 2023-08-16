@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div className=''>
       <HeroHome />
-      <div className='md:m-10'>
-        <div className="flex justify-center m-16">
-          <Image src={logoVegan} alt='vegan logo' className='w-16 m-2 md:w-28'></Image>
-          <Image src={logoBio} alt='bio logo' className='w-16 m-2 md:w-28'></Image>
-          <Image src={logoProtein} alt='protein logo' className='w-16 m-2 md:w-28'></Image>
+      <div className='md:m-10 '>
+        <div className="flex justify-center m-8 md:m-16 h-20 md:h-40 ">
+          <Image src={logoBio} alt='bio logo' className='object-contain m-2'></Image>
+          <Image src={logoVegan} alt='vegan logo' className='object-contain m-2'></Image>
+          <Image src={logoProtein} alt='protein logo' className='object-contain m-2'></Image>
         </div>
         <div className='m-16'>
           <h2 className='m-5 text-2xl md:text-5xl'>Try our most popular dishes</h2>

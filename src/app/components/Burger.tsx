@@ -56,7 +56,7 @@ export default function Burger() {
                     </div>
                 </section>
 
-                <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+                <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-green-700">
                     <li>
                         <a href="/" className="hover:text-gray-400">Home</a>
                     </li>
