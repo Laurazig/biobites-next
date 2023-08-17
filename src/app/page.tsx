@@ -24,8 +24,8 @@ export default function Home() {
         </div>
         <div className='m-16'>
           <h2 className='m-5 text-2xl md:text-5xl'>Premium plan comming soon</h2>
-          <div className="md:flex">
-            <Image src={paperBag} alt='paper bag handed over'></Image>
+          <div className="xl:flex">
+            <Image src={paperBag} alt='paper bag handed over' className='object-contain '></Image>
             <div className="self-center text-sm">
               <h3>Many more advantages with BioBites Premium</h3>
               <p className='m-2 md:m-10'> BioBites will always provide a vast range of dishes to choose from and everything you need, already dosed according to the recipes you choose to cook. But With the premium membership you will always have free dessert and many more advantages like:</p>
