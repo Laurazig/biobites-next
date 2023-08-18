@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Nav() {
     return (
-        <div className=" flex justify-between border-green-600 bg-green-700 text-white border-2 p-3 text-xs h-24">
+        <div className=" flex justify-between bg-gradient-to-t from-green-800 to-green-500 text-white border-2 p-3 text-xs h-24">
             <div className="block">
                 <h4 className="font-bold font-color">Get in touch </h4>
                 <p>info@biobites.com </p>

@@ -89,7 +89,8 @@ export default function Burger() {
                     top: 0;
                     left: 0;
                     z-index: 10;
-                    background: green;
+                    background: rgb(53,212,48);
+                    background: linear-gradient(175deg, rgba(53,212,48,1) 0%, rgba(6,159,19,1) 53%, rgba(32,106,36,1) 100%);
                     color: white
                 }
             `}</style>

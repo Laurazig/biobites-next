@@ -17,13 +17,13 @@ export default function Home() {
           <Image src={logoProtein} alt='protein logo' className='object-contain m-2'></Image>
         </div>
         <div className='m-16'>
-          <h2 className='m-5 text-2xl md:text-5xl'>Try our most popular dishes</h2>
+          <h2 className='p-5 text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-tl from-green-500 to-green-800'>Try our most popular dishes</h2>
           <a href="/meals">
-            <button className='w-30 h-15 p-2 rounded-md bg-green-600 text-white'>Meal Selection</button>
+            <button className='w-30 h-15 p-2 rounded-md shadow-2xl bg-gradient-to-t from-green-800 to-green-500 text-white'>Meal Selection</button>
           </a>
         </div>
         <div className='m-16'>
-          <h2 className='m-5 text-2xl md:text-5xl'>Premium plan comming soon</h2>
+          <h2 className='p-7 text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-tl from-green-500 to-green-800'>Premium plan coming soon</h2>
           <div className="xl:flex">
             <Image src={paperBag} alt='paper bag handed over' className='object-contain '></Image>
             <div className="self-center text-sm">
