@@ -11,3 +11,10 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 - Javascript -> Typescript
 - SASS -> TailwindCSS
 - client side rendering -> SSR
+
+
+### set up database
+
+using this youtube tutorial
+
+- https://www.youtube.com/watch?v=gxkwMm_j850
