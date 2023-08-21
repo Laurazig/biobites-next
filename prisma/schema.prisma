@@ -16,8 +16,38 @@ datasource db {
 //more concise than raw SQL
 //interact with DB on server- generate client library: npx prisma generate 
 //     -> import client into JS file
+
+
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
+  posts Post[]
 }
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
+
+//taken from biobites meal.js
+model Meal{
+  id          Int     @id @default(autoincrement())
+  mealName    String
+  img         String
+  description String
+  price       Int
+  rating      Int
+}
+
+// const mealSchema = new Schema({
+//     mealName: {type: String, required: true}, 
+//     img: {type: String, required: true},
+//     description: {type: String, required: true},
+//     price: {type: Number, required: true, min: 3},
+//     rating: {type: Number, required: true, min: 0},
+// }, {timestamps: true});
