@@ -1,4 +1,8 @@
 import HeroMeals from '../components/banners/HeroMeal'
+import dish1 from '../../../public/assets/dish1.jpg'
+import dish2 from '../../../public/assets/dish2.jpg'
+import dish3 from '../../../public/assets/dish3.jpg'
+import Image from 'next/image'
 
 export default function meals() {
     // use context
@@ -12,10 +16,11 @@ export default function meals() {
             <div className='md:m-10'>
                 <h1>Select meals</h1>
                 <h3 className='text-center'>Select 3 meals and proceed to cart for checkout </h3>
-                <div className="p-5 my-5">
-                    <div className="meals-container">
+                <div className="m-3 flex space-x-3 justify-between sm:justify-center">
+                    <Image src={dish1} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish3} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
                         {/* add MERN code  */}
-                    </div>
                 </div>
             </div>
         </div>
