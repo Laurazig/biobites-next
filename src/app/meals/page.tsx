@@ -16,10 +16,14 @@ export default function meals() {
             <div className='md:m-10'>
                 <h1>Select meals</h1>
                 <h3 className='text-center'>Select 3 meals and proceed to cart for checkout </h3>
-                <div className="m-3 flex space-x-3 justify-between sm:justify-center">
+                <div className="m-3 flex space-x-3 justify-between sm:justify-center overflow-scroll">
                     <Image src={dish1} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
-                    <Image src={dish3} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
                     <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish1} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish1} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
+                    {/* <Image src={dish3} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image> */}
                         {/* add MERN code  */}
                 </div>
             </div>
