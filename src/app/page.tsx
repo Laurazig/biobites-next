@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image'
 import HeroHome from './components/banners/HeroHome';
 import paperBag from '../../public/assets/hero/heroBag.jpg'

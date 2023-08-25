@@ -15,6 +15,9 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 
 ### set up database
 
-using this youtube tutorial
+### Tutorials
+using these youtube tutorials
 
-- https://www.youtube.com/watch?v=gxkwMm_j850
+- Next.js13 Tailwind Prisma Postgresql Typescript https://www.youtube.com/watch?v=gxkwMm_j850
+- Next.js 13 Full Course 2023 https://www.youtube.com/watch?v=wm5gMKuwSYk (up to 0:30/3:26)
+

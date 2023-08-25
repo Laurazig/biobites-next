@@ -1,3 +1,5 @@
+'use client';
+
 import HeroMeals from '../components/banners/HeroMeal'
 import dish1 from '../../../public/assets/dish1.jpg'
 import dish2 from '../../../public/assets/dish2.jpg'
