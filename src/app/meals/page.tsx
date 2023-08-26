@@ -3,21 +3,28 @@
 import HeroMeals from '../components/banners/HeroMeal'
 import dish1 from '../../../public/assets/dish1.jpg'
 import dish2 from '../../../public/assets/dish2.jpg'
-import dish3 from '../../../public/assets/dish3.jpg'
+// import dish3 from '../../../public/assets/dish3.jpg'
 import Image from 'next/image'
 
-export default function meals() {
+async function meals() {
     // use context
     // useNavigate
     // add to cart
     // check login
 
+    // const res = await fetch(
+    //     '',
+    //     {cache:'no-store'}
+    // );
+    //     const data = await res.json()
     return (
         <div className=''>
             <HeroMeals />
             <div className='md:m-10'>
                 <h1>Select meals</h1>
                 <h3 className='text-center'>Select 3 meals and proceed to cart for checkout </h3>
+                {/* <div>data.img</div> */}
+                {/* <div>data.title</div> */}
                 <div className="m-3 flex space-x-3 justify-between sm:justify-center overflow-scroll">
                     <Image src={dish1} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
                     <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
@@ -32,6 +39,8 @@ export default function meals() {
         </div>
     )
 }
+export default meals
+
 
 
 {/* {meals.map((meal) => {

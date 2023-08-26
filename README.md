@@ -19,5 +19,5 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 using these youtube tutorials
 
 - Next.js13 Tailwind Prisma Postgresql Typescript https://www.youtube.com/watch?v=gxkwMm_j850
-- Next.js 13 Full Course 2023 https://www.youtube.com/watch?v=wm5gMKuwSYk (up to 0:30/3:26)
+- Next.js 13 Full Course 2023 https://www.youtube.com/watch?v=wm5gMKuwSYk (up to 0:35/3:26)
 
