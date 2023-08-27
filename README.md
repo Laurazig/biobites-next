@@ -11,6 +11,7 @@ A Next.js version of my MERN end of course project at DCI with a team of 4 coder
 - Javascript -> Typescript
 - SASS -> TailwindCSS
 - client side rendering -> SSR
+- React Routes -> App Router (File-based)
 
 
 ### set up database
