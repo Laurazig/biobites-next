@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import Image from 'next/image'
 import HeroHome from './components/banners/HeroHome';
 import paperBag from '../../public/assets/hero/heroBag.jpg'
@@ -7,6 +8,37 @@ import logoBio from '../../public/assets/logos/bioLogo.jpg'
 import logoProtein from '../../public/assets/logos/highProteinLogo.jpg'
 
 export default function Home() {
+//useEffect hook: runs a function every render of component
+// two times when component renders to DOM
+// 1 - initially when it first loads
+// 2 - on state change
+// React side-effect: fetch data
+
+//Code imported from MERN Biobites for displaying meals :
+// export const MyContext = React.createContext();
+
+ // const [meals, setMeals] = useState([]);
+
+ //fires on every render
+  // useEffect( () => {
+  //================================
+  // Function to fetch meals data
+  //===============================
+  //   const fetchMealsData = async () => {
+  //     const response = await fetch(process.env.REACT_APP_SERVER_URL + "/meals");
+  //     const result = await response.json();
+  //     try{
+  //       if(response.ok) {
+  //         setMeals(result)
+  //       } else {
+  //         throw new Error(result.message)
+  //       }
+  //     }catch(err){
+  //       alert(err.message)
+  //     }
+  //   }
+  //  fetchMealsData()
+  // }, [] );
 
   return (
     <div className=''>
@@ -45,30 +77,7 @@ export default function Home() {
 }
 
 
-//Code imported from MERN Biobites for displaying meals :
-// export const MyContext = React.createContext();
 
-
- // const [meals, setMeals] = useState([]);
-  // useEffect( () => {
-  //================================
-  // Function to fetch meals data
-  //===============================
-  //   const fetchMealsData = async () => {
-  //     const response = await fetch(process.env.REACT_APP_SERVER_URL + "/meals");
-  //     const result = await response.json();
-  //     try{
-  //       if(response.ok) {
-  //         setMeals(result)
-  //       } else {
-  //         throw new Error(result.message)
-  //       }
-  //     }catch(err){
-  //       alert(err.message)
-  //     }
-  //   }
-  //  fetchMealsData()
-  // }, [] );
 
     //    <MyContext.Provider value={{ meals, setMeals }}>
     // <div className='App'>
