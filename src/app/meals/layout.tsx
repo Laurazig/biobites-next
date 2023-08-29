@@ -1,3 +1,5 @@
+//taken from youtube tutorial 2
+//to be adapted
 import React from "react"
 
 const layout = () => {

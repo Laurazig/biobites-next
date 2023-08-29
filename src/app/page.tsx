@@ -1,11 +1,19 @@
-'use client';
+'use client'
+// "use client" directive needed for state, hooks & client side management solutions (onClick and useState)
+// need to declare components as client side component
+// state management is handled client side - component state is managed and updated in the browser. 
+// By default, components inside app are React Server Components.
+
 import { useState } from 'react';
 import Image from 'next/image'
+import { Inter } from '@next/font/google'
 import HeroHome from './components/banners/HeroHome';
 import paperBag from '../../public/assets/hero/heroBag.jpg'
 import logoVegan from '../../public/assets/logos/petaLogo.jpg'
 import logoBio from '../../public/assets/logos/bioLogo.jpg'
 import logoProtein from '../../public/assets/logos/highProteinLogo.jpg'
+
+const inter = Inter({ subsets:['latin']})
 
 export default function Home() {
 //useEffect hook: runs a function every render of component

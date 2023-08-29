@@ -1,3 +1,6 @@
+//taken from youtube tutorial 2
+//to be implimented / studied
+
 'use client'
 
 import { useEffect } from "react"

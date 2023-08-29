@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import HeroMeals from '../components/banners/HeroMeal'
 import dish1 from '../../../public/assets/dish1.jpg'
