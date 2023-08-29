@@ -6,14 +6,12 @@
 
 import { useState } from 'react';
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import HeroHome from './components/banners/HeroHome';
 import paperBag from '../../public/assets/hero/heroBag.jpg'
 import logoVegan from '../../public/assets/logos/petaLogo.jpg'
 import logoBio from '../../public/assets/logos/bioLogo.jpg'
 import logoProtein from '../../public/assets/logos/highProteinLogo.jpg'
 
-const inter = Inter({ subsets:['latin']})
 
 export default function Home() {
 //useEffect hook: runs a function every render of component
