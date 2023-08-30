@@ -4,9 +4,10 @@
 // state management is handled client side - component state is managed and updated in the browser. 
 // By default, components inside app are React Server Components.
 
-import { useState } from 'react';
+import { useState } from 'react'
 import Image from 'next/image'
-import HeroHome from './components/banners/HeroHome';
+import Link from 'next/link'
+import HeroHome from './components/banners/HeroHome'
 import paperBag from '../../public/assets/hero/heroBag.jpg'
 import logoVegan from '../../public/assets/logos/petaLogo.jpg'
 import logoBio from '../../public/assets/logos/bioLogo.jpg'
@@ -57,9 +58,9 @@ export default function Home() {
         </div>
         <div className='m-16'>
           <h2 className='p-5 text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-tl from-green-500 to-green-800'>Try our most popular dishes</h2>
-          <a href="/meals">
+          <Link href="/meals">
             <button className='w-30 h-15 p-2 rounded-md shadow-2xl bg-gradient-to-t from-green-800 to-green-500 text-white'>Meal Selection</button>
-          </a>
+          </Link>
         </div>
         <div className='m-16'>
           <h2 className='p-7 text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-tl from-green-500 to-green-800'>Premium plan coming soon</h2>
