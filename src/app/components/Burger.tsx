@@ -1,7 +1,8 @@
 'use client';
 
 import React from "react";
-import { useState } from "react";
+import { useState } from "react"
+import Link from 'next/link'
 // import { SocialIcon } from "react-social-icons";
 
 export default function Burger() {
@@ -39,19 +40,19 @@ export default function Burger() {
                         </div>
                         <ul className="flex flex-col items-center justify-between min-h-[250px] ">
                             <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
-                                <a href="/">Home</a>
+                                <Link href="/">Home</Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
-                                <a href="/howitworks">How it works</a>
+                                <Link href="/howitworks">How it works</Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
-                                <a href="/meals">Meals</a>
+                                <Link href="/meals">Meals</Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/cart">Cart</a>
+                                <Link href="/cart">Cart</Link>
                             </li>
                             {/* <li className="border-b border-gray-400 my-8 uppercase hover:text-gray-400">
-                                <a href="/sustainability">Sustainability</a>
+                                <Link href="/sustainability">Sustainability</Link>
                             </li> */}
                         </ul>
                         {/* <SocialIcon url="https://www.instagram.com/needles_craft_kultur_leipzig/" target="blank" /> */}
@@ -60,19 +61,19 @@ export default function Burger() {
 
                 <ul className="DESKTOP-MENU hidden space-x-8 lg:flex text-green-700">
                     <li>
-                        <a href="/" className="hover:text-gray-400">Home</a>
+                        <Link href="/" className="hover:text-gray-400">Home</Link>
                     </li>
                     <li>
-                        <a href="/howitworks" className="hover:text-gray-400">How it works</a>
+                        <Link href="/howitworks" className="hover:text-gray-400">How it works</Link>
                     </li>
                     <li>
-                        <a href="/meals" className="hover:text-gray-400">Meals</a>
+                        <Link href="/meals" className="hover:text-gray-400">Meals</Link>
                     </li>
                     <li>
-                        <a href="/cart" className="hover:text-gray-400 mr-2">Cart</a>
+                        <Link href="/cart" className="hover:text-gray-400 mr-2">Cart</Link>
                     </li>
                     {/* <li>
-                        <a href="/sustainability" className="hover:text-gray-400 mr-2">Sustainability</a>
+                        <Link href="/sustainability" className="hover:text-gray-400 mr-2">Sustainability</Link>
                     </li> */}
                 </ul>
             </nav>
