@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 // "use client" directive needed for state, hooks & client side management solutions (onClick and useState)
 // need to declare components as client side component
 // state management is handled client side - component state is managed and updated in the browser. 
@@ -13,8 +13,19 @@ import logoVegan from '../../public/assets/logos/petaLogo.jpg'
 import logoBio from '../../public/assets/logos/bioLogo.jpg'
 import logoProtein from '../../public/assets/logos/highProteinLogo.jpg'
 
+// async function getPosts() {
+//   const res = await fetch(`${process.env.BASE_URL}/api/getPosts`)
+//   if(!res.ok){
+//     console.log(res)
+//   }
+//   return res.json()
+// }
+export default async function Home() {
+  // const data = await getPosts()
+  // console.log(data)
 
-export default function Home() {
+
+  
 //useEffect hook: runs a function every render of component
 // two times when component renders to DOM
 // 1 - initially when it first loads

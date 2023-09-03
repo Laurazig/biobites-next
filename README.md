@@ -23,6 +23,6 @@ supabase
 ### Tutorials
 using these youtube tutorials
 
-- Next.js13 Tailwind Prisma Postgresql Typescript https://www.youtube.com/watch?v=gxkwMm_j850  (0:26 / 0:45 )
+- Next.js13 Tailwind Prisma Postgresql Typescript https://www.youtube.com/watch?v=gxkwMm_j850  (0:35 / 0:45 )
 - Next.js 13 Full Course 2023 https://www.youtube.com/watch?v=wm5gMKuwSYk (up to 0:35/3:26)
 
