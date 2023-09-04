@@ -8,10 +8,10 @@ import { NextResponse } from 'next/server'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma from '../../../prisma/client'
 
-// export default async function handler(
-//   req: NextApiRequest,
-//   res: NextApiResponse
-// ){
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+){
 // if(req.method === 'GET'){
 //   try{
 //     const data = await prisma.post.findMany()
@@ -20,7 +20,7 @@ import prisma from '../../../prisma/client'
 //     return res.status(500).json(error)
 //   }
 // }
-// }
+}
 
  
 export async function GET() {
