@@ -7,6 +7,16 @@ import dish2 from '../../../public/assets/dish2.jpg'
 import Image from 'next/image'
 
 async function meals() {
+
+    //************ */
+    // add and remove
+    // function create(){
+    //     let myString = document.createElement("Demo");
+    //     myString.textContent = "running a demo code";
+    //     myString.setAttribute('class','note');
+    //     document.body.appendChild(myString)
+    // }
+    //************ */
     // use context
     // useNavigate
     // add to cart
@@ -34,6 +44,8 @@ async function meals() {
                     <Image src={dish2} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image>
                     {/* <Image src={dish3} alt='food' className='object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]'></Image> */}
                         {/* add MERN code  */}
+
+                    
                 </div>
             </div>
         </div>
