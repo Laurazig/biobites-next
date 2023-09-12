@@ -1,5 +1,5 @@
 "use client";
-
+import React, { useState, useEffect } from "react";
 import HeroMeals from "../components/banners/HeroMeal";
 import dish1 from "../../../public/assets/dish1.jpg";
 import dish2 from "../../../public/assets/dish2.jpg";
@@ -7,6 +7,27 @@ import dish2 from "../../../public/assets/dish2.jpg";
 import Image from "next/image";
 
 async function meals() {
+  const [meals, setMeals] = useState([]);
+  useEffect( () => {
+      //================================
+    // Function to fetch meals data
+    //===============================
+    const fetchMealsData = async () => {
+      const response = await fetch(process.env.REACT_APP_SERVER_URL + "/meals");
+      const result = await response.json();
+      // try{
+        if(response.ok) {
+          setMeals(result)
+        } else {
+          throw new Error(result.message)
+        }
+      // }
+      // catch(err){
+      //   alert(err.message)
+      // }
+    }
+   fetchMealsData()
+  }, [] );
   //************ */
   // add and remove
   // function create(){
@@ -87,7 +108,7 @@ async function meals() {
 }
 export default meals;
 
-{
+// {
   /* {meals.map((meal) => {
     return (
         <div key={meal._id} className="meal">
@@ -109,4 +130,4 @@ export default meals;
         </div>
         );
     })} */
-}
+// }
