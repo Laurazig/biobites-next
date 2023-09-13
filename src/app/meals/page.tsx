@@ -8,26 +8,32 @@ import Image from "next/image";
 
 async function meals() {
   const [meals, setMeals] = useState([]);
-  useEffect( () => {
-      //================================
+
+  const deleteImange = () => {
+    
+    document.getElementById("imageToRemove")?.remove();
+    document.getElementById("buttonToRemove")?.remove();
+  };
+  useEffect(() => {
+    //================================
     // Function to fetch meals data
     //===============================
     const fetchMealsData = async () => {
-      const response = await fetch(process.env.REACT_APP_SERVER_URL + "/meals");
+      const response = await fetch(process.env.DATABASE_URL + "/meals");
       const result = await response.json();
       // try{
-        if(response.ok) {
-          setMeals(result)
-        } else {
-          throw new Error(result.message)
-        }
+      if (response.ok) {
+        setMeals(result);
+      } else {
+        throw new Error(result.message);
+      }
       // }
       // catch(err){
       //   alert(err.message)
       // }
-    }
-   fetchMealsData()
-  }, [] );
+    };
+    fetchMealsData();
+  }, []);
   //************ */
   // add and remove
   // function create(){
@@ -92,13 +98,18 @@ async function meals() {
           {/* add MERN code  */}
         </div>
         <div className="text-left">
-            {/* Image.remove() */}
+          {/* Image.remove() */}
           <Image
+            id="imageToRemove"
             src={dish1}
             alt="food"
             className="object-contain w-24 h-auto sm:w-36 lg:w-52 mb-10 rounded-lg hover:scale-[1.01]"
           ></Image>
-          <button className="w-25 p-2 bg-slate-500 rounded-md text-white text-xs">
+          <button
+            onClick={deleteImange}
+            id="buttonToRemove"
+            className="w-25 p-2 bg-slate-500 rounded-md text-white text-xs"
+          >
             click to delete
           </button>
         </div>
@@ -109,7 +120,7 @@ async function meals() {
 export default meals;
 
 // {
-  /* {meals.map((meal) => {
+/* {meals.map((meal) => {
     return (
         <div key={meal._id} className="meal">
         <img src={meal.img} width="300" alt="" />
