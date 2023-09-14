@@ -10,7 +10,6 @@ async function meals() {
   const [meals, setMeals] = useState([]);
 
   const deleteImange = () => {
-    
     document.getElementById("imageToRemove")?.remove();
     document.getElementById("buttonToRemove")?.remove();
   };
