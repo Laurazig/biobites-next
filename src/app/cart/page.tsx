@@ -9,6 +9,119 @@ export default function cart() {
     document.getElementById("imageToRemove")?.remove();
     document.getElementById("buttonToRemove")?.remove();
   };
+  // const {
+  //   cart,
+  //   setCart,
+  //   user,
+  //   setOrders,
+  //   orders,
+  //   addToCart,
+  //   removeFromCart,
+  //   changeQuantity,
+  // } = useContext(MyContext);
+
+  // const navigate = useNavigate();
+  // const [message, setMessage] = useState('');
+  // const [placedOrder, setPlacedOrder] = useState(false);
+  // const [total, setTotal] = useState(0);
+  // const [userData, SetUserData] = useState(null);
+  // const [sameAddress, setSameAddress] = useState(true);
+  // //const [stripeState, setStripeState] = useState(false)
+
+  // useEffect(() => {
+  //   const sum = cart.reduce((acc, item) => {
+  //     acc += item.price * item.quantity;
+  //     return acc;
+  //   }, 0);
+  //   setTotal(sum);
+  // }, [cart]);
+
+  // // * Yohannes and Sameer modify the placeOrder function
+  // // ===========================================================================
+  // // The customer placing an order in the front end and post it in the back end
+  // //============================================================================
+  // const submitOrder = async (e) => {
+  //   e.preventDefault();
+  //   if (!user) {
+  //     navigate('/register');
+  //   } else if (cart.length < 3) {
+  //     alert('Minimum order is three meals');
+  //   } else {
+  //     const newOrder = {
+  //       meals: cart.map((item) => item._id),
+  //       total: total,
+  //       userId: user.id,
+  //       deliveryAddress: {
+  //         houseNo: sameAddress ? user.info.houseNo : e.target.hn.value,
+  //         street: sameAddress ? user.info.street : e.target.stn.value,
+  //         zipCode: sameAddress ? user.info.zipCode : e.target.zc.value,
+  //         city: sameAddress ? user.info.city : e.target.city.value,
+  //         phone: sameAddress ? user.info.phone : e.target.phone.value,
+  //       },
+  //     };
+
+  //     // console.log(newOrder);
+
+  //     const settings = {
+  //       method: 'POST',
+  //       body: JSON.stringify(newOrder),
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     };
+  //     const response = await fetch(`http://localhost:3001/orders`, settings);
+  //     const result = await response.json();
+  //     try {
+  //       if (response.ok) {
+  //         setOrders([...orders, result.data._id]);
+  //         setPlacedOrder(true);
+  //       } else {
+  //         throw new Error(result.message);
+  //       }
+  //     } catch (err) {
+  //       alert(err.message);
+  //     }
+  //   }
+  // };
+   // ===========================================================================
+  // Deleting a single ordered meal by the customer
+  //============================================================================
+
+  // const deleteSingleOrderedMeal = (meal) => {
+  //   let updatedCart = cart.filter((item) => item._id !== meal._id);
+  //   setCart(updatedCart);
+  //   localStorage.setItem('cart', JSON.stringify(updatedCart));
+  // }; 
+    // ===========================================================================
+  // Customer clicks pay on success page to load stripe payment (order already in database)
+  //============================================================================
+  // const stripe = async () => {
+
+  //   const pay = {
+  //     total: total,
+  //   };
+
+  //   const settings = {
+  //     method: 'POST',
+  //     body: JSON.stringify(pay),
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   };
+  //   const response = await fetch(`http://localhost:3001/payment`, settings);
+  //   const result = await response.json();
+  //   try {
+  //     if (response.ok) {
+  //       //setStripeState(true)
+  //       setCart([]);
+  //       window.location.href = result.url;
+  //     } else {
+  //       throw new Error(result.message);
+  //     }
+  //   } catch (err) {
+  //     alert(err.message);
+  //   }
+  // };
   return (
     <div className="">
       <HeroCart />
